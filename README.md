@@ -52,5 +52,8 @@ The script joins the six clips into one film. It:
 
 ## Deploy
 
-- **Netlify:** drag the `site` folder onto <https://app.netlify.com/drop>.
-- **Vercel:** import this repo and set **Root Directory** to `site`.
+The repo is already configured for both hosts: `netlify.toml` and `vercel.json` tell them to publish the `site/` folder with no build step.
+
+- **Netlify:** Add new site → Import from GitHub → pick this repo → Deploy. Leave the settings blank.
+  For drag-and-drop on <https://app.netlify.com/drop>, drag the **`site`** folder, not the whole project.
+- **Vercel:** Add New → Project → import this repo → Deploy. Leave Root Directory as `./`.

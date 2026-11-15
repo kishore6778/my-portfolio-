@@ -1,0 +1,16 @@
+# The website lives in site/ — publish that folder, no build step needed.
+[build]
+  publish = "site"
+  command = ""
+
+# Videos and images never change between deploys: cache them hard.
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Accept-Ranges = "bytes"
+
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Content-Type = "video/mp4"
