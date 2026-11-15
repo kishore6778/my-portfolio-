@@ -1,0 +1,15 @@
+# build scratch + outputs that build_film.py regenerates
+_work/
+__pycache__/
+film_master.mp4
+
+# originals kept locally (copies live in clips/)
+clip *.mp4
+start.png
+AI_Character_Portfolio_Visual_Guide.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/
